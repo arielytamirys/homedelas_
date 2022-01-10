@@ -1,0 +1,120 @@
+@model IEnumerable<Homedelas.Models.Inicial>
+
+@{
+    ViewData["Title"] = "Index Inicial";
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Index</title>
+</head>
+
+
+
+
+
+<style>
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.grid-inicio { 
+
+margin-left: 3%; 
+margin-top: 3%;  
+  
+}
+
+.img{
+  max-width: 0%;
+ max-height: 0%;
+}
+
+.imagem-principal{/*esta mantendo a imagem centralizada de certa forma */
+
+height: 800px;
+width: 1200px;
+
+}
+
+.botao-busca{
+
+ text-align: center;
+
+}
+
+input[type="text"] {
+    width: 500px; /*pagina incial*/
+    height: 50px;
+    border-width: 3px;
+    border-color: rgb(226, 89, 112);
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 25px;
+    border-radius: 15px;
+
+}
+
+
+button{
+font-size: 20px;
+ background-color:  rgb(248, 248, 248);
+font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif, Courier, monospace;
+ width: 250px;
+height: 50px;
+border-radius: 20px;/*arredondamento da borda*/
+border-width: 3px; /*tamanho da borda*/
+border-color: rgb(226, 89, 112);/*cor da borda*/
+
+}
+
+button:hover{ /*:houver serve para quando passar o mause o botao fique outra cor*/
+  background-color:  rgb(226, 89, 112);
+  color: white;
+}
+
+.frase-inicial{
+  margin-top: 8%;
+  align-items: center;
+  font-family: cursive;
+
+}
+
+    
+</style>
+
+  
+
+  
+<body>
+
+
+  <div class="grid-inicio">
+<div class="imagem-principal"> 
+  <img src="./img_homedelas/mae_home.jpeg">
+</div>
+
+
+  <form class="botao-busca">
+    <div class="busca">
+      <label> <input type="text" id="User" name="Name" size="20" maxlength="25" placeholder="Qual vaga você Procura?" /></label>
+    </div>
+    
+    <div class="botao-vagas">
+      <button type="submit" >Buscar Vagas</button>
+    </div>
+  </form>
+
+  <h1 class="frase-inicial"> Somos livre, somos lindas, somos louca pela vida, luta mos pelos nosso direitos,<br/> somos nossa propriedade, somos guerreira... <spam>Somos  mulher.</spam>
+
+
+
+ </div>
+
+</body>
+</html>

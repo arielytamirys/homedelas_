@@ -1,0 +1,63 @@
+@model Homedelas.Models.Cadastro_Vaga
+
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Details</title>
+</head>
+<body>
+
+<div>
+    <h4>Cadastro_Vaga</h4>
+    <hr />
+    <dl class="row">
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.CNPJ)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.CNPJ)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.Empresa)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.Empresa)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.Responsavel)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.Responsavel)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.Setor)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.Setor)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.Vaga)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.Vaga)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.Descricao)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.Descricao)
+        </dd>
+    </dl>
+</div>
+<div>
+    <a asp-action="Edit" asp-route-id="@Model.Id_Cadastro_Vaga">Edit</a> |
+    <a asp-action="Index">Back to List</a>
+</div>
+</body>
+</html>

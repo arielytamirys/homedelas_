@@ -1,0 +1,46 @@
+@model IEnumerable<Homedelas.Models.Vaga>
+
+@{
+    ViewData["Title"] = "Index Vaga";
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Index</title>
+</head>
+<body>
+
+
+@* <p>
+    <a asp-action="Create">Create New</a>
+</p> *@
+
+<a href="https://www.eluta.ca/search?q=Developer+Full+Stack&l=&qc=#!"><h3>Full Stack</h3></a><p>..Developer reporting to the Software Development Manager and working on a team of 10-11, you will be responsible for designing, developing and maintaining our responsive web applications. Within your...</p>
+
+<a href="https://www.eluta.ca/search?q=Developer+Full+Stack&l=&qc=#!"><h3>Full Stack</h3></a><p>..Developer reporting to the Software Development Manager and working on a team of 10-11, you will be responsible for designing, developing and maintaining our responsive web applications. Within your...</p>
+
+<a href="https://www.eluta.ca/search?q=Developer+Full+Stack&l=&qc=#!"><h3>Full Stack</h3></a><p>..Developer reporting to the Software Development Manager and working on a team of 10-11, you will be responsible for designing, developing and maintaining our responsive web applications. Within your...</p>
+
+<table class="table">
+    @* <thead>
+        <tr>
+            <th></th>
+        </tr>
+    </thead> *@
+    <tbody>
+@foreach (var item in Model) {
+        @* <tr>
+            <td>
+                <a asp-action="Edit" asp-route-id="@item.Id_Vagas">Edit</a> |
+                <a asp-action="Details" asp-route-id="@item.Id_Vagas">Details</a> |
+                <a asp-action="Delete" asp-route-id="@item.Id_Vagas">Delete</a>
+            </td>
+        </tr> *@
+}
+    </tbody>
+</table>
+</body>
+</html>
